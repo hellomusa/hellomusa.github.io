@@ -1,5 +1,5 @@
 .App-header {
-  background-color: #ffe9ee;
+  background-color: #fff2e0;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -8,5 +8,19 @@
 }
 
 .name {
-  display: inline-block;
+  display: inline;
+  font-size: 6.15rem;
+}
+
+.school {
+  font-size: 1.4rem;
+  margin: 0px 0px 20px 0px;
+  display: inline;
+}
+
+.logo {
+  height: 30px;
+  width: 20;
+  margin: 0px 20px 0px 2px;
+  opacity: 0.8;
 }

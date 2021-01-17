@@ -1,0 +1,12 @@
+.App-header {
+  background-color: #ffe9ee;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.name {
+  display: inline-block;
+}

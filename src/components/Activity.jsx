@@ -21,7 +21,7 @@ const Activity = () => {
       params: {
         method: 'user.getrecenttracks',
         user: 'musa6ali',
-        api_key: process.env.REACT_APP_API_KEY,
+        api_key: "a3d14e9a7ce5f6d568fbf3415b944382",
         format: 'json',
         limit: 1
       }

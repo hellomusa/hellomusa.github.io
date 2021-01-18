@@ -1,11 +1,32 @@
 #projects {
-  background-color: #fff;
+  background-color: #fff2e0;
 }
 
-.title {
-  font-size: 3rem;
+.experience-title {
+  font-size: 3.3rem;
 }
 
-.project-list {
-  text-align: justify;
+.job-heading {
+  font-size: 2.3rem;
+}
+
+@media (max-width: 767px) {
+  .job-heading {
+    text-align: center;
+  }
+}
+
+.job-subheading {
+  font-size: 1.3rem;
+}
+
+.job-description {
+  text-align: left;
+}
+
+.blueprint-logo {
+  width: 110%;
+}
+.stocks-img {
+  max-width: 150%;
 }

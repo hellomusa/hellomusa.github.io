@@ -1,0 +1,39 @@
+.my-navbar {
+  background-color: #fff2e0;
+}
+
+.navbar-header {
+  background-color: white;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  text-decoration: none !important;
+}
+
+.navbar-option,
+.navbar-title {
+  color: black !important;
+}
+
+.navbar-option:hover,
+.navbar-title:hover {
+  color: red !important;
+}
+
+.my-active .navbar-title {
+  color: red !important;
+}
+
+.my-active .nav-link {
+  border-bottom: 1px solid black;
+  color: black !important;
+}
+
+.navbar-toggle {
+  color: black !important;
+}
+
+.nav-link {
+  color: black !important;
+}

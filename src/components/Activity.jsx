@@ -16,7 +16,7 @@ const Activity = () => {
   const [repoError, setRepoError] = useState(false);
 
   const fetchRecentSong = () => {
-    axios.get('http://ws.audioscrobbler.com/2.0/',
+    axios.get('https://ws.audioscrobbler.com/2.0/',
     {
       params: {
         method: 'user.getrecenttracks',

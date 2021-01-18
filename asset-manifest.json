@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.768a30de.chunk.css",
+    "main.js": "/static/js/main.f6051a82.chunk.js",
+    "main.js.map": "/static/js/main.f6051a82.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4c393d3b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4c393d3b.js.map",
+    "static/css/2.1f208231.chunk.css": "/static/css/2.1f208231.chunk.css",
+    "static/js/2.5d73f246.chunk.js": "/static/js/2.5d73f246.chunk.js",
+    "static/js/2.5d73f246.chunk.js.map": "/static/js/2.5d73f246.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.1f208231.chunk.css.map": "/static/css/2.1f208231.chunk.css.map",
+    "static/css/main.768a30de.chunk.css.map": "/static/css/main.768a30de.chunk.css.map",
+    "static/js/2.5d73f246.chunk.js.LICENSE.txt": "/static/js/2.5d73f246.chunk.js.LICENSE.txt",
+    "static/media/blueprint.d35b3e3c.svg": "/static/media/blueprint.d35b3e3c.svg",
+    "static/media/carleton.0ed6b149.png": "/static/media/carleton.0ed6b149.png",
+    "static/media/musa.ba7eb935.png": "/static/media/musa.ba7eb935.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c393d3b.js",
+    "static/css/2.1f208231.chunk.css",
+    "static/js/2.5d73f246.chunk.js",
+    "static/css/main.768a30de.chunk.css",
+    "static/js/main.f6051a82.chunk.js"
+  ]
+}

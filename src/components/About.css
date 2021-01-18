@@ -1,0 +1,14 @@
+.title {
+  font-size: 3rem;
+}
+
+.description {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.image {
+  max-width: 60%;
+  position: relative;
+  z-index: 1;
+}

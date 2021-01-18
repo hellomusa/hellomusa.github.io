@@ -46,8 +46,8 @@ const Experience = () => {
             </h4>
 
             <p>
-              - Assisted students in a one-on-one setting during weekly office hours, answering
-                questions related to Python and making sure the course material is understood.
+              Assisted students in a one-on-one setting during weekly office hours, answering
+              questions related to Python and making sure the course material is understood.
             </p>
 
             {/* RA */}
@@ -59,7 +59,7 @@ const Experience = () => {
             </h4>
 
             <p>
-              - Worked with lab coordinator{" "}
+              Worked with lab coordinator{" "}
               <a href="https://www.french.utoronto.ca/people/directories/all-faculty/fatima-hamlaoui">
                 Shannon Newlands
               </a>
@@ -68,7 +68,8 @@ const Experience = () => {
               <a href="https://carleton.ca/discoverycentre/funding-opportunities/students-as-partners-program-sapp/">
                 Students as Partners Program (SaPP).
               </a>
-              <br />- Refactored existing lab simulations and built new ones using Typescript and
+              <br />
+              Refactored existing lab simulations and built new ones using Typescript and
               Angular, allowing students to safely complete course work from home.
             </p>
           </div>

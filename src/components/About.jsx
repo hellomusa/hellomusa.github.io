@@ -15,16 +15,19 @@ const About = () => {
               I'm a computer science student at <strong> Carleton University </strong>
               primarily interested in web development. I enjoy discovering
               new songs and movies
-              <br/>
-              <br/>
+              <br/><br/>
               Currently volunteering at <a href="https://cublueprint.org/">CU Blueprint </a>
               as a backend developer, helping develop pro-bono apps for nonprofits.
-              <br/>
-              <br/>
+              <br/><br/>
+              <hr></hr>
               <h4>STALK ME: (not implemented yet)</h4>
               <ul>
-                <li>I probably just finished listening to <a href="#">Song Title</a></li>
-                <li>I recently pushed some changes to <a href="#">Repo Name</a> (todo)</li>
+                <li>
+                  I probably just finished listening to <a href="#">Song Title</a>
+                </li>
+                <li>
+                  I recently pushed some changes to <a href="#">Repo Name</a>
+                </li>
               </ul>
             </p>
           </div>

@@ -14,9 +14,9 @@ const About = () => {
             <p className="description">
               <hr></hr>
               I'm a computer science student at <strong> Carleton University </strong>
-              primarily interested in web development. I enjoy listening to all types of songs
+              primarily interested in web development.
               <br/><br/>
-              Currently volunteering at <a href="https://cublueprint.org/">CU Blueprint </a>
+              Currently, I'm volunteering at <a href="https://cublueprint.org/">CU Blueprint </a>
               as a backend developer, helping develop pro-bono apps for nonprofits.
               <br/><br/>
               <hr></hr>

@@ -1,11 +1,13 @@
 import "./Header.css";
 
 import Typist from "react-typist";
+import XNavbar from "./XNavbar";
 
 const Header = () => {
   return (
     <div>
-      <header className="App-header">
+      <XNavbar />
+      <header id="home" className="App-header">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-6">
@@ -24,20 +26,17 @@ const Header = () => {
               >
                 <div class="school">
                   <p>
-                    📖 studying cs @ 
-                    <span style={{color: "red"}}> carleton u</span>
+                    computer science @ 
+                    <a href="https://carleton.ca/" style={{color: "red"}}> carleton university</a>
                   </p>
                 </div>
               </Typist>
 
               <div class="links">
-                <a href="https://www.linkedin.com/in/musa-ali-cu/"> linkedin </a>
-                /
-                <a href="https://github.com/hellomusa"> github </a>
-                /
-                <a href="#"> resume </a>
-                /
-                <a href="#"> email </a>
+                <a href="https://www.linkedin.com/in/musa-ali-cu/">👥 linkedin </a>
+                <a href="https://github.com/hellomusa">👨‍💻 github </a>
+                <a href="#">📜 resume </a>
+                <a href="#">📧 email </a>
               </div>
             </div>
 

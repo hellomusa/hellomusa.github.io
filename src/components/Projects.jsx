@@ -1,8 +1,5 @@
 import "./Projects.css";
 
-import stocks from "../images/stocks.png";
-import carleton from "../images/carleton.png";
-
 const Projects = () => {
   return (
     <div id="projects" className="above-particles jumbotron jumbotron-fluid m-0">
@@ -63,7 +60,9 @@ const Projects = () => {
             <p>
               RBC Analytics Challenge.
               <br />
-              Used Twitter API to scan and analyze customer feedback.
+              Created a Flask application to scan and analyze customer feedback.
+              <br />
+              Used Tweepy to access Twitter API.
             </p>
             <a href="https://github.com/hellomusa/feedback_analyzer">View GitHub Repo</a>
           </div>

@@ -1,6 +1,7 @@
 import "./About.css";
 import Image from "react-bootstrap/Image";
 import musa from "../images/musa.png";
+import Activity from "./Activity";
 
 
 const About = () => {
@@ -13,22 +14,13 @@ const About = () => {
             <p className="description">
               <hr></hr>
               I'm a computer science student at <strong> Carleton University </strong>
-              primarily interested in web development. I enjoy discovering
-              new songs and movies
+              primarily interested in web development. I enjoy listening to all types of songs
               <br/><br/>
               Currently volunteering at <a href="https://cublueprint.org/">CU Blueprint </a>
               as a backend developer, helping develop pro-bono apps for nonprofits.
               <br/><br/>
               <hr></hr>
-              <h4>STALK ME: (not implemented yet)</h4>
-              <ul>
-                <li>
-                  I probably just finished listening to <a href="#">Song Title</a>
-                </li>
-                <li>
-                  I recently pushed some changes to <a href="#">Repo Name</a>
-                </li>
-              </ul>
+              <Activity />
             </p>
           </div>
           <div className="col-md-6 align-self-center">

@@ -60,7 +60,7 @@ const Experience = () => {
 
             <p>
               Worked with lab coordinator{" "}
-              <a href="https://www.french.utoronto.ca/people/directories/all-faculty/fatima-hamlaoui">
+              <a href="https://carleton.ca/biology/people/shannon-newlands/">
                 Shannon Newlands
               </a>
               {" "}

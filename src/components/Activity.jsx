@@ -76,7 +76,7 @@ const Activity = () => {
           {!songError && isSongLoading && <Typist>Loading recent song...</Typist>}
           {!isSongLoading &&
             <>
-              I just finished listening to{" "}
+              I probably just finished listening to{" "}
               <a href={recentSong.link}>{recentSong.title} by {recentSong.artist}</a>.
             </>
           }

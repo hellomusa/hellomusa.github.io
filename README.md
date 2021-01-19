@@ -1,2 +1,2 @@
-## [www.hellomusa.github.io](https://www.hellomusa.github.io)
+## [www.hellomusa.github.io](https://hellomusa.github.io/)
 Will soon replace hellomusa.com

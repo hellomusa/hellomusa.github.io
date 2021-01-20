@@ -1,5 +1,5 @@
 {
-  "name": "personal-website-v2",
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://hellomusa.github.io/",
@@ -11,7 +11,6 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
-    "react-particles-js": "^3.4.1",
     "react-scripts": "4.0.1",
     "react-scroll": "^1.8.1",
     "react-typist": "^2.0.5",

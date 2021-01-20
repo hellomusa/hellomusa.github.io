@@ -45,7 +45,7 @@ const Projects = () => {
 
 
         {/* cuHacking */}
-        <div className="row">
+        <div className="pt-2 pb-5 row">
           <div className="job-description col-md-9 order-md-2">
             <h3 className="job-heading display-4 pt-3">
               cuHacking 2020

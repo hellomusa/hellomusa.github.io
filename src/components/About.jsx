@@ -3,7 +3,6 @@ import Image from "react-bootstrap/Image";
 import musa from "../images/musa.png";
 import Activity from "./Activity";
 
-
 const About = () => {
   return (
     <div id="about" className="above-particals jumbotron jumbotron-fluid bg-light text-black m-0">
@@ -27,7 +26,6 @@ const About = () => {
             <Image className="image" src={musa} roundedCircle />
             <p>Varadero, Cuba</p>
           </div>
-            
         </div>
       </div>
     </div>

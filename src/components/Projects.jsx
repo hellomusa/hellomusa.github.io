@@ -54,7 +54,7 @@ const Projects = () => {
               Web Application
             </h4>
             <h4 className="text-muted job-subheading display-4">
-              September - December 2020
+              January 2020
             </h4>
             <strong style={{color: "purple"}}>Flask, NLTK, MySQL</strong>
             <p>

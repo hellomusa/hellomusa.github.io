@@ -26,7 +26,7 @@ const XNavbar = () => {
               duration={500}
             >
               <a href="#home" className="navbar-title">
-                musa
+                hellomusa
               </a>
             </Link>
           </Navbar.Brand>

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.17560ccc.chunk.css",
+    "main.css": "/static/css/main.88f967a3.chunk.css",
     "main.js": "/static/js/main.9418ac27.chunk.js",
     "main.js.map": "/static/js/main.9418ac27.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.01539f98.js",
@@ -10,7 +10,7 @@
     "static/js/2.bf0f7c8a.chunk.js.map": "/static/js/2.bf0f7c8a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1f208231.chunk.css.map": "/static/css/2.1f208231.chunk.css.map",
-    "static/css/main.17560ccc.chunk.css.map": "/static/css/main.17560ccc.chunk.css.map",
+    "static/css/main.88f967a3.chunk.css.map": "/static/css/main.88f967a3.chunk.css.map",
     "static/js/2.bf0f7c8a.chunk.js.LICENSE.txt": "/static/js/2.bf0f7c8a.chunk.js.LICENSE.txt",
     "static/media/blueprint.d35b3e3c.svg": "/static/media/blueprint.d35b3e3c.svg",
     "static/media/carleton.0ed6b149.png": "/static/media/carleton.0ed6b149.png",
@@ -20,7 +20,7 @@
     "static/js/runtime-main.01539f98.js",
     "static/css/2.1f208231.chunk.css",
     "static/js/2.bf0f7c8a.chunk.js",
-    "static/css/main.17560ccc.chunk.css",
+    "static/css/main.88f967a3.chunk.css",
     "static/js/main.9418ac27.chunk.js"
   ]
 }

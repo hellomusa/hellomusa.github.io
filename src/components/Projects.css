@@ -30,3 +30,17 @@
 .stocks-img {
   max-width: 150%;
 }
+
+.logos * {
+  margin: 10px;
+}
+
+.logos img {
+  width: 50px;
+  length: 50px;
+}
+
+#projects a {
+  color: black;
+  text-decoration: none;
+}

@@ -12,12 +12,13 @@ const About = () => {
             <h1 className="title display-4 mb-4">👋 hey, i'm musa <span style={{fontSize: "2rem"}}>(he/him)</span></h1>
             <p className="description">
               <hr></hr>
-              I'm a computer science student at <strong> Carleton University </strong>
-              primarily interested in web development.
+              I'm a computer science student who is exploring the different ways technology can be used to <strong>make a difference.</strong>
               <br/><br/>
               Currently, I'm volunteering at <a href="https://cublueprint.org/">CU Blueprint </a>
-              as a backend developer, helping develop pro-bono apps for nonprofits.
+              as a backend developer, helping develop pro-bono apps for a nonprofit.
               <br/><br/>
+              This May 2021, I will be joining <a href="https://www.rbc.com/about-rbc.html">RBC</a> for an 8-month internship.
+              <br/>
               <hr></hr>
               <Activity />
             </p>

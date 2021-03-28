@@ -89,7 +89,8 @@ const Activity = () => {
           {!repoError && isRepoLoading && <Typist>Loading recent repo...</Typist>}
           {!isRepoLoading &&
             <>
-              Just pushed some changes to <a href={recentRepo.link}>{recentRepo.name}</a>.
+              Recently pushed changes to{" "}
+              <a href={recentRepo.link}>{recentRepo.name}</a>.
             </>
           }
         </li>

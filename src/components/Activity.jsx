@@ -72,14 +72,14 @@ const Activity = () => {
 
   return (
     <div>
-      <h4>Stalk me: (APIs are fun)</h4>
+      <h4>Stalk me:</h4>
       <ul>
         <li>
           {songError && "Error getting most recently played song."}
           {!songError && isSongLoading && <Typist>Loading recent song...</Typist>}
           {!isSongLoading &&
             <>
-              I probably just finished listening to{" "}
+              Probably just finished listening to{" "}
               <a href={recentSong.link}>{recentSong.title} by {recentSong.artist}</a>.
             </>
           }
@@ -89,7 +89,7 @@ const Activity = () => {
           {!repoError && isRepoLoading && <Typist>Loading recent repo...</Typist>}
           {!isRepoLoading &&
             <>
-              I probably just pushed some changes to <a href={recentRepo.link}>{recentRepo.name}</a>.
+              Just pushed some changes to <a href={recentRepo.link}>{recentRepo.name}</a>.
             </>
           }
         </li>

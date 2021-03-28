@@ -25,9 +25,12 @@
   color: red !important;
 }
 
+.my-active .lead navbar-option {
+  color: red !important;
+}
+
 .my-active .nav-link {
-  border-bottom: 1px solid black;
-  color: black !important;
+  color: red !important;
 }
 
 .navbar-toggle {

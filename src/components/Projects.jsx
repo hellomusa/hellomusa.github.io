@@ -92,6 +92,7 @@ const Projects = () => {
               </h4>
               <p>Worked in a team of 3 to develop a solution to RBC's Analytics Challenge.</p>
               <div className="logos">
+                <img src={python} />
                 <img src={flask} />
                 <img src={mysql} />
             </div>

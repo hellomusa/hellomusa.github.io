@@ -2,12 +2,29 @@ import "./Experience.css";
 
 import blueprint from "../images/blueprint.svg";
 import carleton from "../images/carleton.png";
+import rbc from "../images/RBC.png";
 
 const Experience = () => {
   return (
     <div id="experience" className="above-particles jumbotron jumbotron-fluid m-0">
       <div className="container">
         <h1 className="experience-title display-3">Experience</h1>
+
+        {/* RBC */}
+        <div className="pt-2 pb-5 row">
+          <div className="col-md-3 order-md-1 align-self-center">
+            <img className="rbc-logo" src={rbc} alt="rbc" />
+          </div>
+          <div className="job-description col-md-9 order-md-2">
+            <h3 className="job-heading display-4 pt-3">Royal Bank of Canada</h3>
+            <h4 className="text-muted job-subheading display-4">
+              Software Developer Intern, DevOps Services
+            </h4>
+            <h4 className="text-muted job-subheading display-4">
+              May 2021 - Present
+            </h4>
+          </div>
+        </div>
 
         {/* Blueprint */}
         <div className="pt-2 pb-5 row">
@@ -22,7 +39,9 @@ const Experience = () => {
             <h4 className="text-muted job-subheading display-4">
               January 2021 - Present
             </h4>
-            <p></p>
+            <p>
+              Working with the MERN stack to help create a CRM dashboard for Beneficent, a nonprofit organization that gives interest-free loans to Canadians suffering from short-term high interest-bearing debt.
+            </p>
           </div>
         </div>
 

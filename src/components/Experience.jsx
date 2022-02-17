@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <div id="experience" className="above-particles jumbotron jumbotron-fluid m-0">
       <div className="container">
-        <h1 className="experience-title display-3">experience</h1>
+        <h1 className="experience-title display-3">Experience</h1>
 
         {/* RBC */}
         <div className="pt-2 pb-5 row">

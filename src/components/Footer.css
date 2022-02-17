@@ -1,13 +1,15 @@
 #contact {
   background-color: #fff2e0;
+  font-size: 1rem;
+  color: black;
+  text-transform: uppercase;
 }
 
 .contact-title {
-  color: black;
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .copyright {
-  color: black;
   font-size: 1rem;
 }

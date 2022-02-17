@@ -9,10 +9,10 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <h1 className="title display-4 mb-4">👋 hey, i'm musa <span style={{fontSize: "2rem"}}>(he/him)</span></h1>
+            <h1 className="title display-4 mb-4">👋 Hey, I'm Musa <span style={{fontSize: "2rem"}}>(he/him)</span></h1>
             <p className="description">
               <hr></hr>
-              i enjoy programming, reading about the mind, and listening to music. <br/>
+              I enjoy programming, reading about the mind, and listening to music. <br/>
               <hr></hr>
               <Activity />
             </p>

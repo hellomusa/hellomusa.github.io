@@ -32,8 +32,8 @@ const Header = () => {
               >
                 <div class="school">
                   <p>
-                    computer science @ 
-                    <a href="https://carleton.ca/" style={{color: "red"}}> carleton university</a>
+                    Computer Science @ 
+                    <a href="https://carleton.ca/" style={{color: "red"}}> Carleton University</a>
                   </p>
                 </div>
               </Typist>

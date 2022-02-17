@@ -54,7 +54,7 @@ const Activity = () => {
 
   return (
     <div>
-      <h4>here's what I've been listening to: </h4>
+      <h4 class="musicHeading">Here's what I've been listening to... </h4>
       <ul>
           {songError && "Error getting most recently played songs."}
           {!songError && areSongsLoading && <Typist>Loading recent songs...</Typist>}

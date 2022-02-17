@@ -10,11 +10,12 @@
 
 .name {
   display: inline;
-  font-size: 130px;
+  font-size: 8rem;
+  text-transform: uppercase;
 }
 
 .school {
-  font-size: 28px;
+  font-size: 2rem;
 }
 
 .links {

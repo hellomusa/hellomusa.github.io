@@ -3,11 +3,14 @@
 }
 
 .experience-title {
-  font-size: 3.3rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 .job-heading {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
+  font-family: "Trochut", cursive;
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
@@ -16,12 +19,9 @@
   }
 }
 
-.job-subheading {
-  font-size: 1.3rem;
-}
-
 .job-description {
   text-align: left;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .blueprint-logo {

@@ -1,3 +1,26 @@
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes colorRotate {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+#about {
+  background-image: url("../images/about-bg.jpg");
+  background-blend-mode: overlay;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite alternate;
+}
+
 .title {
   font-size: 3rem;
 }
@@ -11,4 +34,5 @@
   max-width: 60%;
   position: relative;
   z-index: 1;
+  animation: none;
 }

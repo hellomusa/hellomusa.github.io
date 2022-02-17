@@ -12,10 +12,7 @@ const About = () => {
             <h1 className="title display-4 mb-4">👋 hey, i'm musa <span style={{fontSize: "2rem"}}>(he/him)</span></h1>
             <p className="description">
               <hr></hr>
-              I am a computer science student who is exploring the different ways technology can be used to <strong>make a difference.</strong>
-              <br/><br/>
-              Currently I am completing an 8-month co-op work term with RBC's DevOps Services team.
-              <br/>
+              i enjoy programming, reading about the mind, and listening to music. <br/>
               <hr></hr>
               <Activity />
             </p>

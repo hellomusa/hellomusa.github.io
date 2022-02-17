@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div id="contact" className="jumbotron jumbotron-fluid m-0">
       <div className="container mb-4">
-        <h1 className="display-3 contact-title">Contact me</h1>
+        <h1 className="display-3 contact-title">contact me</h1>
         <div className="social-networks">
           <a
             href="https://www.linkedin.com/in/musa-ali-cu/"

@@ -6,35 +6,15 @@ import mysql from '../images/mysql.png';
 import react from '../images/react.png';
 import nodejs from '../images/nodejs.png';
 import flask from '../images/flask.png';
-import docker from '../images/docker.png';
+// import docker from '../images/docker.png';
 import python from '../images/python.png';
-import postgres from '../images/postgres.png';
+// import postgres from '../images/postgres.png';
 
 const Projects = () => {
   return (
     <div id="projects" className="above-particles jumbotron jumbotron-fluid m-0">
       <div className="container">
-        <h1 className="experience-title display-3">Projects</h1>
-
-          {/* Invoice Manager */}
-          <a href="https://github.com/hellomusa/Invoice-Generator">
-          <div className="pt-2 pb-5 row">
-            <div className="job-description col-md-9 order-md-2">
-              <h3 className="job-heading display-4 pt-3">Invoice Manager</h3>
-              <h4 className="text-muted job-subheading display-4">
-                January 2021 - Present
-              </h4>
-              <p>Working with a small business to build a platform to create and manage company invoices.</p>
-              <div className="logos">
-                <img src={react} />
-                <img src={python} />
-                <img src={flask} />
-                <img src={postgres} />
-                <img src={docker} />
-              </div>
-            </div>
-          </div>
-        </a>
+        <h1 className="experience-title display-3">projects</h1>
 
         {/* VibeScript */}
         <a href="https://github.com/hellomusa/vibescript">
@@ -48,9 +28,9 @@ const Projects = () => {
               </h4>
               <p>Worked in a team of 4 to develop a single-page, pair programming matchmaker web application.</p>
               <div className="logos">
-                <img src={react} />
-                <img src={nodejs} />
-                <img src={mongodb} />
+                <img src={react} alt="React.js logo" />
+                <img src={nodejs} alt="Node.js logo"/>
+                <img src={mongodb} alt="MongoDB logo" />
               </div>
             </div>
           </div>
@@ -92,9 +72,9 @@ const Projects = () => {
               </h4>
               <p>Worked in a team of 3 to develop a solution to RBC's Analytics Challenge.</p>
               <div className="logos">
-                <img src={python} />
-                <img src={flask} />
-                <img src={mysql} />
+                <img src={python} alt="Python logo" />
+                <img src={flask} alt="Flask logo"/>
+                <img src={mysql} alt="MySQL logo"/>
             </div>
             </div>
           </div>

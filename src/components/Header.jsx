@@ -2,6 +2,10 @@ import "./Header.css";
 
 import Typist from "react-typist";
 import XNavbar from "./XNavbar";
+import FunkyButton from "./FunkyButton";
+
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -13,7 +17,9 @@ const Header = () => {
             <div className="col-md-6">
 
               {/* Personal Info */}
-              <h1 class="name">musa ali</h1>
+              <div className="rotatingText">
+                <h1 class="name">musa ali</h1>
+              </div>
               <Typist
                 avgTypingDelay={75}
                 cursor={{
@@ -33,13 +39,15 @@ const Header = () => {
               </Typist>
 
               <div class="links">
-                <a href="https://www.linkedin.com/in/musa-ali-cu/">👥 linkedin </a>
-                <a href="https://github.com/hellomusa">👨‍💻 github </a>
-                <a href="mailto:musa6ali@gmail.com">📧 email </a>
+                <FunkyButton url="https://www.linkedin.com/in/musa-ali-cu/" icon={faLinkedinIn}/>
+                <FunkyButton url="https://github.com/hellomusa" icon={faGithub} />
+                <FunkyButton url="mailto:musa6ali@gmail.com" icon={faEnvelope} />
               </div>
             </div>
           </div>
-          <div className="scroll">scroll down!</div>
+          <div className="scroll bounce">
+            <i class="fa fa-arrow-down fa-2x" />
+          </div>
         </div>
       </header>
     </div>

@@ -18,7 +18,7 @@ const Header = () => {
 
               {/* Personal Info */}
               <div className="rotatingText">
-                <h1 class="name">musa ali</h1>
+                <h1 className="name">musa ali</h1>
               </div>
               <Typist
                 avgTypingDelay={75}
@@ -30,7 +30,7 @@ const Header = () => {
                   hideWhenDoneDelay: 1000,
                 }}
               >
-                <div class="school">
+                <div className="school">
                   <p>
                     Computer Science @ 
                     <a href="https://carleton.ca/" style={{color: "red"}}> Carleton University</a>
@@ -38,7 +38,7 @@ const Header = () => {
                 </div>
               </Typist>
 
-              <div class="links">
+              <div className="links">
                 <FunkyButton url="https://www.linkedin.com/in/musa-ali-cu/" icon={faLinkedinIn}/>
                 <FunkyButton url="https://github.com/hellomusa" icon={faGithub} />
                 <FunkyButton url="mailto:musa6ali@gmail.com" icon={faEnvelope} />
@@ -46,7 +46,7 @@ const Header = () => {
             </div>
           </div>
           <div className="scroll bounce">
-            <i class="fa fa-arrow-down fa-2x" />
+            <i className="fa fa-arrow-down fa-2x" />
           </div>
         </div>
       </header>

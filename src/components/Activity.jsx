@@ -35,13 +35,12 @@ const Activity = () => {
               );
             }
           }
-          songs.push(<li>{anchor}</li>)
+          songs.push(<li key={song.name}>{anchor}</li>)
         });
-        if (currentSong) {
+        if (currentSong !== {}) {
           setRecentSongs(delete songs[0]);
         }
         setRecentSongs(songs);
-        console.log(songs);
         setAreSongsLoading(false);
       })
       .catch((err) => {
@@ -54,11 +53,11 @@ const Activity = () => {
 
   return (
     <div>
-      <h4 class="musicHeading">Here's what I've been listening to... </h4>
+      <h4 className="musicHeading">Here's what I've been listening to... </h4>
       <ul>
           {songError && "Error getting most recently played songs."}
           {!songError && areSongsLoading && <Typist>Loading recent songs...</Typist>}
-          {!areSongsLoading && currentSong &&
+          {!areSongsLoading && Object.keys(currentSong).length !== 0 &&
             <>
             {currentSong}
             </>

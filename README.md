@@ -1,3 +1,8 @@
-## Check it out at [hellomusa.com](https://www.hellomusa.com/)
+## [hellomusa.com](https://www.hellomusa.com/)
 
-### Uses the Last.fm and GitHub APIs to get my most recently played song (Spotify scrobbling to Last.fm), and my most recently updated repo (latest push).
+### How it works
+#### Using the Last.fm [API](https://www.last.fm/api) we can, in real-time, get my recently played songs and any song I am currently listening to
+
+### To-do
+#### Fix responsiveness for mobile devices
+

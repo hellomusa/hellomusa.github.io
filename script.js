@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const username = 'musa6ali';
 
     function fetchTracks(page = 1, uniqueTracks = new Map()) {
-        fetch(`http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&page=${page}&limit=50`)
+        fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&page=${page}&limit=50`)
             .then(response => response.json())
             .then(data => {
                 const tracks = data.recenttracks.track;

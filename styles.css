@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-column, .right-column {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-column {
+    width: 60%;
+    border-right: 1px solid #ddd;
+}
+
+.right-column {
+    width: 40%;
+}
+
+h1 {
+    text-transform: lowercase;
+    margin: 0;
+}
+
+.description {
+    margin: 20px 0;
+}
+
+.company {
+    margin-bottom: 15px;
+}
+
+.company h3 {
+    margin: 5px 0;
+}
+
+.title, .dates {
+    margin: 2px 0;
+    color: #555;
+}
+
+.right-column h2 {
+    margin-bottom: 10px;
+}
+
+#music-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+}
+
+.music-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.music-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.music-item a:hover {
+    text-decoration: underline;
+}
+
+.api-label {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        margin: 30px 0 30px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .left-column {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .right-column {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .company {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company h3, .company .title, .company .dates {
+        margin: 2px 0;
+    }
+}

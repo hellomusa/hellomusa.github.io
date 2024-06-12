@@ -31,10 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         li.style.transform = `rotate(${getRandomRotation()})`;
                         li.style.animationDelay = `${index}s`;
 
-                        if (nowPlaying) {
-                            li.classList.add('now-playing');
-                        }
-
                         const img = document.createElement('img');
                         img.src = imageUrl;
                         img.alt = trackName;
@@ -42,7 +38,13 @@ document.addEventListener('DOMContentLoaded', function () {
                         const a = document.createElement('a');
                         a.href = url;
                         a.target = '_blank';
-                        a.textContent = `${trackName} (now playing)`;
+
+                        if (nowPlaying) {
+                            li.classList.add('now-playing');
+                            a.textContent = `${trackName} (now playing)`;
+                        } else {
+                            a.textContent = trackName;
+                        }
 
                         li.appendChild(img);
                         li.appendChild(a);

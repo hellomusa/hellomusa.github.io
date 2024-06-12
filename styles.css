@@ -1,4 +1,5 @@
 body {
+    background: linear-gradient(to right, #e0f7e9, #ffffff); /* Very light green to white */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,10 +7,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
     box-sizing: border-box;
+    color: rgb(76, 76, 76);
 }
 
+.eb-garamond-400 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
 .container {
     display: flex;
     flex-direction: row;
@@ -37,7 +46,7 @@ body {
 }
 
 h1 {
-    text-transform: lowercase;
+    text-transform: capitalize;
     margin: 0;
 }
 
@@ -73,6 +82,25 @@ h1 {
 .music-item {
     display: flex;
     align-items: center;
+    opacity: 0.2;
+    animation: fadeIn 1s forwards;
+    transform: rotate(0deg); /* Default rotation */
+}
+
+.music-item:nth-child(1) { animation-delay: 0s; }
+.music-item:nth-child(2) { animation-delay: 1s; }
+.music-item:nth-child(3) { animation-delay: 2s; }
+.music-item:nth-child(4) { animation-delay: 3s; }
+.music-item:nth-child(5) { animation-delay: 4s; }
+.music-item:nth-child(6) { animation-delay: 5s; }
+.music-item:nth-child(7) { animation-delay: 6s; }
+.music-item:nth-child(8) { animation-delay: 7s; }
+.music-item:nth-child(9) { animation-delay: 8s; }
+.music-item:nth-child(10) { animation-delay: 9s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .music-item img {
@@ -90,6 +118,10 @@ h1 {
 
 .music-item a:hover {
     text-decoration: underline;
+}
+
+.now-playing {
+    background-color: rgba(224, 247, 233, 0.3); /* Highlight the currently playing track with a border or any other style */
 }
 
 .api-label {

@@ -1,12 +1,13 @@
 body {
-    background: linear-gradient(to right, #e0f7e9, #ffffff); /* Very light green to white */
+    background: linear-gradient(to right, #e0f7e9, #ffffff);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     color: rgb(76, 76, 76);
 }
@@ -16,13 +17,27 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  
+.name-header {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #333, #666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 20px;
+    border-bottom: 2px solid #333;
+}
+
 .container {
     display: flex;
-    flex-direction: row;
-    width: 80%;
+    flex-direction: column;
+    width: 40%;
     max-width: 1200px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,43 +46,57 @@ body {
     box-sizing: border-box;
 }
 
-.left-column, .right-column {
+.header-section, .social-section, .music-section {
+    width: 100%;
     padding: 20px;
     box-sizing: border-box;
 }
 
-.left-column {
-    width: 60%;
-    border-right: 1px solid #ddd;
+.header-section, .music-section {
+    border-bottom: 1px solid #ddd;
 }
 
-.right-column {
-    width: 40%;
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-h1 {
+h2 {
     text-transform: capitalize;
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 .description {
     margin: 20px 0;
 }
 
-.company {
-    margin-bottom: 15px;
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.company h3 {
-    margin: 5px 0;
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.title, .dates {
-    margin: 2px 0;
-    color: #555;
+.social-links a:hover {
+    color: #4a4a4a;
 }
 
-.right-column h2 {
+.social-links i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.music-section h2 {
     margin-bottom: 10px;
 }
 
@@ -75,16 +104,18 @@ h1 {
     list-style-type: none;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .music-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     opacity: 0.2;
     animation: fadeIn 1s forwards;
-    transform: rotate(0deg); /* Default rotation */
+    transform: rotate(0deg);
 }
 
 .music-item:nth-child(1) { animation-delay: 0s; }
@@ -114,6 +145,7 @@ h1 {
     text-decoration: none;
     color: #333;
     font-size: 14px;
+    text-align: center;
 }
 
 .music-item a:hover {
@@ -121,7 +153,7 @@ h1 {
 }
 
 .now-playing {
-    background-color: rgba(224, 247, 233, 0.3); /* Highlight the currently playing track with a border or any other style */
+    background-color: rgba(224, 247, 233, 0.3);
 }
 
 .api-label {
@@ -130,41 +162,33 @@ h1 {
     font-style: italic;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 768px) {
     body {
         height: auto;
-        margin: 30px 0 30px 0;
+        margin: 30px 0;
     }
 
     .container {
-        flex-direction: column;
         width: 90%;
         padding: 10px;
-        box-sizing: border-box;
     }
 
-    .left-column {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
+    .header-section, .social-section, .music-section {
         padding: 10px;
-        box-sizing: border-box;
     }
 
-    .right-column {
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .company {
-        display: flex;
+    .social-links {
         flex-direction: column;
-        align-items: flex-start;
+        gap: 10px;
     }
 
-    .company h3, .company .title, .company .dates {
-        margin: 2px 0;
+    #music-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name-header {
+        font-size: 2.5rem;
+        padding: 5px 10px;
     }
 }

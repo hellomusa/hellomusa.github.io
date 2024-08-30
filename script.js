@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
+const NUM_TRACKS = 5;
+
+document.addEventListener('DOMContentLoaded', () => {
     const musicList = document.getElementById('music-list');
     const apiKey = 'a3d14e9a7ce5f6d568fbf3415b944382';
     const username = 'musa6ali';
@@ -22,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
 
-                if (uniqueTracks.size < 10 && tracks.length > 0) {
+                if (uniqueTracks.size < NUM_TRACKS && tracks.length > 0) {
                     fetchTracks(page + 1, uniqueTracks);
                 } else {
-                    Array.from(uniqueTracks.entries()).slice(0, 10).forEach(([trackName, { imageUrl, url, nowPlaying }], index) => {
+                    Array.from(uniqueTracks.entries()).slice(0, NUM_TRACKS).forEach(([trackName, { imageUrl, url, nowPlaying }], index) => {
                         const li = document.createElement('li');
                         li.classList.add('music-item');
                         li.style.transform = `rotate(${getRandomRotation()})`;

@@ -1,4 +1,4 @@
-const NUM_TRACKS = 4;
+const NUM_TRACKS = 6;
 
 document.addEventListener('DOMContentLoaded', () => {
     const musicList = document.getElementById('music-list');
@@ -58,11 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         const li = document.createElement('li');
                         li.classList.add('music-item');
                         li.style.transform = `rotate(${getRandomRotation()})`;
-                        li.style.animationDelay = `${index * 0.5}s`;
+                        li.style.animationDelay = `${index * 0.2}s`;
 
                         const img = document.createElement('img');
                         img.src = imageUrl;
                         img.alt = trackName;
+                        img.style.width = '48px';
+                        img.style.height = '48px';
+                        img.style.marginBottom = '8px';
 
                         const trackInfo = document.createElement('div');
                         trackInfo.classList.add('track-info');
@@ -80,12 +83,30 @@ document.addEventListener('DOMContentLoaded', () => {
                             timeInfo.textContent = getTimeAgo(timestamp);
                         }
 
+                        const tagContainer = document.createElement('div');
+                        tagContainer.className = 'tag-badges';
                         trackInfo.appendChild(trackLink);
+                        trackInfo.appendChild(tagContainer);
                         trackInfo.appendChild(timeInfo);
 
                         li.appendChild(img);
                         li.appendChild(trackInfo);
                         musicList.appendChild(li);
+
+                        const [artist, song] = trackName.split(' - ');
+                        fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getTopTags&artist=${encodeURIComponent(artist)}&track=${encodeURIComponent(song)}&api_key=${apiKey}&format=json`)
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.toptags && data.toptags.tag && data.toptags.tag.length > 0) {
+                                    data.toptags.tag.slice(0, 2).forEach(tag => {
+                                        const badge = document.createElement('span');
+                                        badge.className = 'tag-badge';
+                                        badge.textContent = tag.name;
+                                        tagContainer.appendChild(badge);
+                                    });
+                                }
+                            })
+                            .catch(() => {});
                     });
                 }
             })

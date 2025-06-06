@@ -9,7 +9,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: overlay, normal;
-    font-family: "EB Garamond", serif;
+    font-family: 'Fredoka', 'EB Garamond', serif, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -32,11 +32,12 @@ body {
 }
 
 .name-header {
+    font-family: 'EB Garamond', serif;
     font-size: 3rem;
     font-weight: 700;
     color: #333;
     margin: 0 0 20px 0;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-align: center;
 }
 
@@ -64,9 +65,11 @@ body {
 }
 
 .highlight {
-    background-color: rgba(76, 175, 80, 0.2);
+    background: none;
+    color: #4caf50;
+    border: 1px solid #4caf50;
     padding: 3px 8px;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .music-section h2 {
@@ -84,6 +87,8 @@ body {
 }
 
 .music-item {
+    position: relative;
+    min-height: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,9 +145,17 @@ body {
 }
 
 .time-info {
-    font-size: 0.9rem;
-    color: #777;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 0.75rem;
+    color: #888;
+    background: none;
+    padding: 0;
     font-style: italic;
+    font-weight: 600;
+    opacity: 0.85;
+    z-index: 2;
 }
 
 .now-playing {
@@ -150,8 +163,7 @@ body {
 }
 
 .now-playing .time-info {
-    color: #4CAF50;
-    font-weight: bold;
+    color: #4caf50;
 }
 
 .social-section {
@@ -178,6 +190,7 @@ body {
 
     .name-header {
         font-size: 2.5rem;
+        margin-bottom: 10px;
     }
 
     .description {
@@ -198,6 +211,7 @@ body {
         align-items: center;
         text-align: left;
         padding: 10px;
+        min-height: 80px;
     }
 
     .music-item img {
@@ -210,4 +224,106 @@ body {
     .track-info {
         align-items: flex-start;
     }
+
+    .track-info a {
+        font-size: 0.92rem;
+    }
+
+    .highlight {
+        font-size: 0.92rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .track-info a {
+        font-size: 0.82rem;
+    }
+    .highlight {
+        font-size: 0.82rem;
+    }
+}
+
+.tag-badges {
+    margin: 4px 0 0 0;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tag-badge {
+    background: none;
+    color: #4caf50;
+    border: 1px solid #4caf50;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: none;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.music-heading {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 0;
+    font-family: 'Fredoka', 'EB Garamond', serif, sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.music-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    padding: 0 2px;
+}
+
+.music-desc {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+    font-family: 'Fredoka', 'EB Garamond', serif, sans-serif;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.music-powered {
+    font-size: 0.8rem;
+    color: #bbb;
+    text-align: right;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+.music-powered a {
+    color: #bbb;
+    text-decoration: underline dotted;
+    font-weight: 500;
+}
+
+.music-section {
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.music-powered-bottom {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    font-size: 0.8rem;
+    color: #bbb;
+    letter-spacing: 0.5px;
+    text-align: right;
+    z-index: 2;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.music-powered-bottom a {
+    color: #bbb;
+    text-decoration: underline dotted;
+    font-weight: 500;
 }
